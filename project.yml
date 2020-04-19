@@ -1,0 +1,39 @@
+name: Kenbunroku
+attributes:
+  ORGANIZATIONNAME: "Shota Shimazu"
+options:
+  bundleIdPrefix: com.shotastage
+  deploymentTarget:
+    iOS: 12.0
+targets:
+  Kenbunroku:
+    type: framework
+    platform: iOS
+    sources:
+      - Kenbunroku
+    settings:
+      base:
+        INFOPLIST_FILE: Kenbunroku/Info.plist
+    postbuildScripts:
+      - name: Run SwiftLint
+        script: >
+          swiftlint
+          --path ${SRCROOT}
+          --config ${SRCROOT}/.swiftlint.yml
+  KenbunrokuTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - KenbunrokuTests
+    settings:
+      base:
+        INFOPLIST_FILE: KenbunrokuTests/Info.plist
+    dependencies:
+      - target: Kenbunroku
+  Example:
+    type: application
+    platform: iOS
+    sources:
+      - Example
+    dependencies:
+      - target: Kenbunroku

@@ -3,85 +3,151 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2511CA79244C306500365453 /* Kenbunroku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2511CA6F244C306500365453 /* Kenbunroku.framework */; };
-		2511CA7E244C306500365453 /* KenbunrokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2511CA7D244C306500365453 /* KenbunrokuTests.swift */; };
-		2511CA80244C306500365453 /* Kenbunroku.h in Headers */ = {isa = PBXBuildFile; fileRef = 2511CA72244C306500365453 /* Kenbunroku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B5A29FC8433BDF98CAD2254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725090EF638609738052C85 /* SceneDelegate.swift */; };
+		3979CAC1E7FCAD65E4CA367C /* Kenbunroku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC82B11DE20BECEE11F10F8 /* Kenbunroku.framework */; };
+		3DD35963434F3630CD96E47D /* KenbunrokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663295238DE201D6B08EAF6E /* KenbunrokuTests.swift */; };
+		43F54794C598FF1DCC19E006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E552D18891824B058388843 /* Assets.xcassets */; };
+		547217A6E5E32E9D7F3A72E5 /* Kenbunroku.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAC82B11DE20BECEE11F10F8 /* Kenbunroku.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6CACE143E2D140A4D760BD42 /* Kenbunroku.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAC82B11DE20BECEE11F10F8 /* Kenbunroku.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72ACBF28C76588A7CD161A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5836854CE06660507F17E3C9 /* LaunchScreen.storyboard */; };
+		A5802FABE32E7A79D10E767E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEA9D77C8BC9F7D742F27B /* ViewController.swift */; };
+		BA20208D68479133E454A4E5 /* Kenbunroku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC82B11DE20BECEE11F10F8 /* Kenbunroku.framework */; };
+		C5CE1CAAD76F6AB2A19DB83F /* Kenbunroku.h in Headers */ = {isa = PBXBuildFile; fileRef = 64A7AF52D21872C45F27C81B /* Kenbunroku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0BBED6A50869498D2438DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32A2686EADCA913D6B8A01 /* AppDelegate.swift */; };
+		D29B6D523DFCA7ABA4855F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AFDEA46EA1044C2639E830 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2511CA7A244C306500365453 /* PBXContainerItemProxy */ = {
+		53FC1C1E013B9DD4B13BEC00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2511CA66244C306400365453 /* Project object */;
+			containerPortal = EA5287C81DC38786BC1C0DB2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2511CA6E244C306400365453;
+			remoteGlobalIDString = 4672860FE59B232CFBBC86A3;
+			remoteInfo = Kenbunroku;
+		};
+		F4FBF0950765E871951F9324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5287C81DC38786BC1C0DB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4672860FE59B232CFBBC86A3;
 			remoteInfo = Kenbunroku;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		680391F4689D118382852BF2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				547217A6E5E32E9D7F3A72E5 /* Kenbunroku.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9763C883E920F755A82E500A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6CACE143E2D140A4D760BD42 /* Kenbunroku.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2511CA6F244C306500365453 /* Kenbunroku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kenbunroku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2511CA72244C306500365453 /* Kenbunroku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kenbunroku.h; sourceTree = "<group>"; };
-		2511CA73244C306500365453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2511CA78244C306500365453 /* KenbunrokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenbunrokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2511CA7D244C306500365453 /* KenbunrokuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenbunrokuTests.swift; sourceTree = "<group>"; };
-		2511CA7F244C306500365453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C0AE4758B1F71DE4C2871C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F32A2686EADCA913D6B8A01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4EA525AB3C39BC7B932BE2C3 /* Example.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A7AF52D21872C45F27C81B /* Kenbunroku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kenbunroku.h; sourceTree = "<group>"; };
+		663295238DE201D6B08EAF6E /* KenbunrokuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenbunrokuTests.swift; sourceTree = "<group>"; };
+		8C4708EF2CAD5EE79416B860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8E552D18891824B058388843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C1528DD12404F0792C39134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1F5ABAB1C80E62C229C656A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BFCEA9D77C8BC9F7D742F27B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C725090EF638609738052C85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D30EDEF8D1E9829EAFB62DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E557718EBBAD96A069C277DA /* KenbunrokuTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KenbunrokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC82B11DE20BECEE11F10F8 /* Kenbunroku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kenbunroku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2511CA6C244C306400365453 /* Frameworks */ = {
+		124101494376834589776C72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3979CAC1E7FCAD65E4CA367C /* Kenbunroku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2511CA75244C306500365453 /* Frameworks */ = {
+		38D27FDC043C2A23EBE77CC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2511CA79244C306500365453 /* Kenbunroku.framework in Frameworks */,
+				BA20208D68479133E454A4E5 /* Kenbunroku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2511CA65244C306400365453 = {
+		021E57CD9A19A876DEDDA9D7 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				2511CA71244C306500365453 /* Kenbunroku */,
-				2511CA7C244C306500365453 /* KenbunrokuTests */,
-				2511CA70244C306500365453 /* Products */,
+				2F32A2686EADCA913D6B8A01 /* AppDelegate.swift */,
+				8E552D18891824B058388843 /* Assets.xcassets */,
+				8C4708EF2CAD5EE79416B860 /* Info.plist */,
+				5836854CE06660507F17E3C9 /* LaunchScreen.storyboard */,
+				F6AFDEA46EA1044C2639E830 /* Main.storyboard */,
+				C725090EF638609738052C85 /* SceneDelegate.swift */,
+				BFCEA9D77C8BC9F7D742F27B /* ViewController.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		2FA3C6F2BF3ABFE20CDCF7B7 = {
+			isa = PBXGroup;
+			children = (
+				021E57CD9A19A876DEDDA9D7 /* Example */,
+				4E87F62FE6B44B65ADE4983D /* Kenbunroku */,
+				54A0DE353FCC6CC131AA3739 /* KenbunrokuTests */,
+				3EE0936E47866D2F6DC211AB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2511CA70244C306500365453 /* Products */ = {
+		3EE0936E47866D2F6DC211AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2511CA6F244C306500365453 /* Kenbunroku.framework */,
-				2511CA78244C306500365453 /* KenbunrokuTests.xctest */,
+				4EA525AB3C39BC7B932BE2C3 /* Example.app */,
+				EAC82B11DE20BECEE11F10F8 /* Kenbunroku.framework */,
+				E557718EBBAD96A069C277DA /* KenbunrokuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2511CA71244C306500365453 /* Kenbunroku */ = {
+		4E87F62FE6B44B65ADE4983D /* Kenbunroku */ = {
 			isa = PBXGroup;
 			children = (
-				2511CA72244C306500365453 /* Kenbunroku.h */,
-				2511CA73244C306500365453 /* Info.plist */,
+				A1F5ABAB1C80E62C229C656A /* Info.plist */,
+				64A7AF52D21872C45F27C81B /* Kenbunroku.h */,
 			);
 			path = Kenbunroku;
 			sourceTree = "<group>";
 		};
-		2511CA7C244C306500365453 /* KenbunrokuTests */ = {
+		54A0DE353FCC6CC131AA3739 /* KenbunrokuTests */ = {
 			isa = PBXGroup;
 			children = (
-				2511CA7D244C306500365453 /* KenbunrokuTests.swift */,
-				2511CA7F244C306500365453 /* Info.plist */,
+				D30EDEF8D1E9829EAFB62DC2 /* Info.plist */,
+				663295238DE201D6B08EAF6E /* KenbunrokuTests.swift */,
 			);
 			path = KenbunrokuTests;
 			sourceTree = "<group>";
@@ -89,25 +155,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2511CA6A244C306400365453 /* Headers */ = {
+		BC7D86F1EF42266E3A346CD5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2511CA80244C306500365453 /* Kenbunroku.h in Headers */,
+				C5CE1CAAD76F6AB2A19DB83F /* Kenbunroku.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2511CA6E244C306400365453 /* Kenbunroku */ = {
+		4672860FE59B232CFBBC86A3 /* Kenbunroku */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2511CA83244C306500365453 /* Build configuration list for PBXNativeTarget "Kenbunroku" */;
+			buildConfigurationList = 4C36683AB6ACDD6178B6949F /* Build configuration list for PBXNativeTarget "Kenbunroku" */;
 			buildPhases = (
-				2511CA6A244C306400365453 /* Headers */,
-				2511CA6B244C306400365453 /* Sources */,
-				2511CA6C244C306400365453 /* Frameworks */,
-				2511CA6D244C306400365453 /* Resources */,
+				BC7D86F1EF42266E3A346CD5 /* Headers */,
+				240AC2B0AD8BD72FED5EC7EE /* Sources */,
+				DF668DCE7EC2FC551BA04652 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -115,109 +180,242 @@
 			);
 			name = Kenbunroku;
 			productName = Kenbunroku;
-			productReference = 2511CA6F244C306500365453 /* Kenbunroku.framework */;
+			productReference = EAC82B11DE20BECEE11F10F8 /* Kenbunroku.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2511CA77244C306500365453 /* KenbunrokuTests */ = {
+		AD57E90E0701DDA46E2D27A0 /* KenbunrokuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2511CA86244C306500365453 /* Build configuration list for PBXNativeTarget "KenbunrokuTests" */;
+			buildConfigurationList = 004174192B02F8010B927F18 /* Build configuration list for PBXNativeTarget "KenbunrokuTests" */;
 			buildPhases = (
-				2511CA74244C306500365453 /* Sources */,
-				2511CA75244C306500365453 /* Frameworks */,
-				2511CA76244C306500365453 /* Resources */,
+				16A8EE516FFDB0924ED00012 /* Sources */,
+				124101494376834589776C72 /* Frameworks */,
+				680391F4689D118382852BF2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2511CA7B244C306500365453 /* PBXTargetDependency */,
+				36CE2257D66D4DBB8D2755BF /* PBXTargetDependency */,
 			);
 			name = KenbunrokuTests;
 			productName = KenbunrokuTests;
-			productReference = 2511CA78244C306500365453 /* KenbunrokuTests.xctest */;
+			productReference = E557718EBBAD96A069C277DA /* KenbunrokuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D67FBD27E86EADF0C184BB90 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739B14590557E5105BCBE290 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				0941468774F9B22A18AD4745 /* Sources */,
+				DE9F3A821FE4CDD9C792B993 /* Resources */,
+				38D27FDC043C2A23EBE77CC8 /* Frameworks */,
+				9763C883E920F755A82E500A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				149BB845F63133960AEC76FB /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = 4EA525AB3C39BC7B932BE2C3 /* Example.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2511CA66244C306400365453 /* Project object */ = {
+		EA5287C81DC38786BC1C0DB2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Shota Shimazu";
 				TargetAttributes = {
-					2511CA6E244C306400365453 = {
-						CreatedOnToolsVersion = 11.4.1;
-					};
-					2511CA77244C306500365453 = {
-						CreatedOnToolsVersion = 11.4.1;
-					};
 				};
 			};
-			buildConfigurationList = 2511CA69244C306400365453 /* Build configuration list for PBXProject "Kenbunroku" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = D840E0C71C58B76D85E0E2C2 /* Build configuration list for PBXProject "Kenbunroku" */;
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
-			mainGroup = 2511CA65244C306400365453;
-			productRefGroup = 2511CA70244C306500365453 /* Products */;
+			mainGroup = 2FA3C6F2BF3ABFE20CDCF7B7;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2511CA6E244C306400365453 /* Kenbunroku */,
-				2511CA77244C306500365453 /* KenbunrokuTests */,
+				D67FBD27E86EADF0C184BB90 /* Example */,
+				4672860FE59B232CFBBC86A3 /* Kenbunroku */,
+				AD57E90E0701DDA46E2D27A0 /* KenbunrokuTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2511CA6D244C306400365453 /* Resources */ = {
+		DE9F3A821FE4CDD9C792B993 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2511CA76244C306500365453 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				43F54794C598FF1DCC19E006 /* Assets.xcassets in Resources */,
+				72ACBF28C76588A7CD161A9C /* LaunchScreen.storyboard in Resources */,
+				D29B6D523DFCA7ABA4855F05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		2511CA6B244C306400365453 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		DF668DCE7EC2FC551BA04652 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint --path ${SRCROOT} --config ${SRCROOT}/.swiftlint.yml\n";
 		};
-		2511CA74244C306500365453 /* Sources */ = {
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0941468774F9B22A18AD4745 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2511CA7E244C306500365453 /* KenbunrokuTests.swift in Sources */,
+				D0BBED6A50869498D2438DD2 /* AppDelegate.swift in Sources */,
+				1B5A29FC8433BDF98CAD2254 /* SceneDelegate.swift in Sources */,
+				A5802FABE32E7A79D10E767E /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16A8EE516FFDB0924ED00012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD35963434F3630CD96E47D /* KenbunrokuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240AC2B0AD8BD72FED5EC7EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2511CA7B244C306500365453 /* PBXTargetDependency */ = {
+		149BB845F63133960AEC76FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2511CA6E244C306400365453 /* Kenbunroku */;
-			targetProxy = 2511CA7A244C306500365453 /* PBXContainerItemProxy */;
+			target = 4672860FE59B232CFBBC86A3 /* Kenbunroku */;
+			targetProxy = F4FBF0950765E871951F9324 /* PBXContainerItemProxy */;
+		};
+		36CE2257D66D4DBB8D2755BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4672860FE59B232CFBBC86A3 /* Kenbunroku */;
+			targetProxy = 53FC1C1E013B9DD4B13BEC00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		5836854CE06660507F17E3C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09C0AE4758B1F71DE4C2871C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F6AFDEA46EA1044C2639E830 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C1528DD12404F0792C39134 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		2511CA81244C306500365453 /* Debug */ = {
+		2E82FAEA4DADB5C2180AA743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.Example;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64B9E3099CB944C372EEB59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KenbunrokuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.KenbunrokuTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89948353EADC49490534DFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KenbunrokuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.KenbunrokuTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C4A76EA20598F8C51236824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Kenbunroku/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.Kenbunroku;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		BB42465BD3E0885E7EBD0837 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +425,6 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -250,7 +447,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -259,8 +455,8 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -268,19 +464,41 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		2511CA82244C306500365453 /* Release */ = {
+		C7DCD10063E8E71B79363337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Kenbunroku/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.Kenbunroku;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		C9136E66D0F67FF45F022BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -290,7 +508,6 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -313,7 +530,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -325,133 +541,71 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		2511CA84244C306500365453 /* Debug */ = {
+		E6515109723DB43E98BB056D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8T4P9D4TB2;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Kenbunroku/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.Kenbunroku;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.Example;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		2511CA85244C306500365453 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8T4P9D4TB2;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Kenbunroku/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.Kenbunroku;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		2511CA87244C306500365453 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8T4P9D4TB2;
-				INFOPLIST_FILE = KenbunrokuTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.KenbunrokuTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2511CA88244C306500365453 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8T4P9D4TB2;
-				INFOPLIST_FILE = KenbunrokuTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.KenbunrokuTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2511CA69244C306400365453 /* Build configuration list for PBXProject "Kenbunroku" */ = {
+		004174192B02F8010B927F18 /* Build configuration list for PBXNativeTarget "KenbunrokuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2511CA81244C306500365453 /* Debug */,
-				2511CA82244C306500365453 /* Release */,
+				89948353EADC49490534DFFD /* Debug */,
+				64B9E3099CB944C372EEB59F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		2511CA83244C306500365453 /* Build configuration list for PBXNativeTarget "Kenbunroku" */ = {
+		4C36683AB6ACDD6178B6949F /* Build configuration list for PBXNativeTarget "Kenbunroku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2511CA84244C306500365453 /* Debug */,
-				2511CA85244C306500365453 /* Release */,
+				8C4A76EA20598F8C51236824 /* Debug */,
+				C7DCD10063E8E71B79363337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		2511CA86244C306500365453 /* Build configuration list for PBXNativeTarget "KenbunrokuTests" */ = {
+		739B14590557E5105BCBE290 /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2511CA87244C306500365453 /* Debug */,
-				2511CA88244C306500365453 /* Release */,
+				E6515109723DB43E98BB056D /* Debug */,
+				2E82FAEA4DADB5C2180AA743 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
+		};
+		D840E0C71C58B76D85E0E2C2 /* Build configuration list for PBXProject "Kenbunroku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB42465BD3E0885E7EBD0837 /* Debug */,
+				C9136E66D0F67FF45F022BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2511CA66244C306400365453 /* Project object */;
+	rootObject = EA5287C81DC38786BC1C0DB2 /* Project object */;
 }
