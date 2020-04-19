@@ -1,11 +1,2 @@
-<!-- Ken:Title --> # BhaaのSampleストーリー
-<!-- Ken:Subtitle --> ## 都市の表の顔
-
-
-
-
-
-
-
-
-
+# BhaaのSampleストーリー<!-- Ken:Title --> 
+## 都市の表の顔<!-- Ken:Subtitle -->
