@@ -4,7 +4,7 @@ attributes:
 options:
   bundleIdPrefix: com.shotastage
   deploymentTarget:
-    iOS: 12.0
+    iOS: 13.0
 targets:
   Kenbunroku:
     type: framework
@@ -14,12 +14,6 @@ targets:
     settings:
       base:
         INFOPLIST_FILE: Kenbunroku/Info.plist
-    postbuildScripts:
-      - name: Run SwiftLint
-        script: >
-          swiftlint
-          --path ${SRCROOT}
-          --config ${SRCROOT}/.swiftlint.yml
   KenbunrokuTests:
     type: bundle.unit-test
     platform: iOS

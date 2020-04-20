@@ -5,12 +5,12 @@ excluded:
     - ThirdParty
     - Makefile.swift
   
-  disabled_rules:
+disabled_rules:
     - identifier_name
     - function_body_length
     - todo
   
-  opt_in_rules:
+opt_in_rules:
     - empty_count
     - file_header
     - explicit_init
@@ -26,19 +26,19 @@ excluded:
     - fatal_error_message
     - function_body_length
   
-  file_header:
+file_header:
     forbidden_pattern: .*?
   
-  trailing_comma:
+trailing_comma:
     mandatory_comma: true
   
-  identifier_name:
+identifier_name:
     min_length: 2
     allowed_symbols: '_'
     validates_start_with_lowercase: false
-  line_length:
+line_length:
     warning: 161
     error: 200
-  function_body_length:
+function_body_length:
     - 100
     - 200
