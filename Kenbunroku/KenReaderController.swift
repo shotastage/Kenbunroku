@@ -12,4 +12,4 @@ class KenReaderController: UIViewController {
     
     
 }
-#imageLiteral(resourceName: "Screen Shot 2020-04-24 at 1.50.45.png")
+
