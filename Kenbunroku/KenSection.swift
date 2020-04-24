@@ -6,4 +6,9 @@
 //  Copyright © 2020 Shota Shimazu. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+class KenSection: UIView {
+    
+}
