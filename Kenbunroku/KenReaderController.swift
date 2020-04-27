@@ -11,5 +11,27 @@ import UIKit
 class KenReaderController: UIViewController {
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        
+        self.view.frame = CGRect()
+    }
+    
+    
+    func loadContent(_ content: String) {
+        
+    }
 }
 
+
+extension KenReaderController {
+    
+    fileprivate func abstractStructureTree() {
+        
+    }
+}
