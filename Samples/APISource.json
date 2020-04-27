@@ -1,8 +1,5 @@
 {
-    "Head": [
-        "DocumentID": "E0012",
-        "DocumentSource": "META"
-    ],
+    "Head": [],
     "Body": [
         {
             "Block": "Title",
@@ -20,30 +17,10 @@
         },
         {
             "Block": "Paragrapgh",
-            "Content": "横浜といえば日本の文明開化の中心となった新しい場所です。\nペリーが来航してからの週百年で目覚ましい発展を遂げました。",
+            "Content": "Hello, world!",
             "FontSize": 11,
             "FontWeight": 400,
             "FontColor": "#333"
-        },
-        {
-            "Block": "Paragrapgh",
-            "Content": "現在の横浜といえば、みなとみらい21地区や関内、日本大通、山下公園、元町中華街などが主な観光地になっています。\nしかし、今回は中心地から外れた裏通りを探検してみたいと多います。",
-
-            "FontSize": 11,
-            "FontWeight": 400,
-            "FontColor": "#333"
-        },
-        {
-            "Block": "Photo",
-            "Image": "./img1.jpeg",
-            "FontSize": 11,
-            "FontWeight": 400,
-            "FontColor": "#333"
-        },
-        {
-            "Block": "FloatingPhotoPanel",
-            "BackgroundImage": "",
-            "Floating": "Floating"
         }
     ]
 }
