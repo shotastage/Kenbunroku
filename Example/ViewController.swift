@@ -25,9 +25,7 @@ class ViewController: UIViewController {
     @objc
     func readButtonEvent(_ sender: Any) {
         print("Call Kenbunroku ViewController")
-        let nextVC = KenReaderController()
-        nextVC.loadContent(loadSampleFile())
-
+        let nextVC = ExampleReaderViewController()
         self.present(nextVC, animated: true, completion: nil)
     }
 

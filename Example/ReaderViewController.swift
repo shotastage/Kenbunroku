@@ -10,10 +10,5 @@ import Kenbunroku
 
 
 final class ExampleReaderViewController: KenReaderController {
-    
-    
-    override func viewWillContentLoad() {
-        super.viewWillContentLoad()
-    }
 
 }

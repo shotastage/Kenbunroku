@@ -9,15 +9,26 @@
 import UIKit
 
 open class KenReaderController: UIViewController {
-    
-    
+
+    var source: String?
+
+    var content: KenFormat? = nil
+
     open override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        
+        viewWillContentLoad()
+        viewDidContentLoad()
+        viewWillContentShow()
     }
     
-   
+    open override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        viewDidContentShow()
+    }
     
     open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -29,25 +40,31 @@ open class KenReaderController: UIViewController {
     }
 
     
-    public func loadContent(_ content: String) {
-        /*
-        let json = content.data(using: .utf8)!
-        let decoder = JSONDecoder()
+    open func viewWillContentLoad() {
+        #if DEBUG
+            print("[Kenbunroku] sample content will be loaded.")
+        #endif
         
-        let decodedJson = try! decoder.decode([[String:String]].self, from: json)
-
-        print("@@@@@@@@@@")
-        print(decodedJson)
-        print("@@@@@@@@@@")
-        */
-        print(content)
+        self.source = kenDefaultSource
     }
-}
 
-
-extension KenReaderController {
+    open func viewDidContentLoad() {
+        self.content = try? KenJSONParser(self.source!).parse()
+    }
     
-    fileprivate func abstractStructureTree() {
+    open func viewWillContentShow() {
+        for content in self.content!.body {
+            if content.contentType == "Text" {
+                let label = UILabel()
+                label.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 20)
+                label.text = content.content
+                
+                self.view.addSubview(label)
+            }
+        }
+    }
+    
+    open func viewDidContentShow() {
         
     }
 }
