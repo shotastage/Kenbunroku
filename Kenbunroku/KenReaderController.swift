@@ -8,23 +8,39 @@
 
 import UIKit
 
-class KenReaderController: UIViewController {
+open class KenReaderController: UIViewController {
     
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
     
-    override func viewDidLayoutSubviews() {
+   
+    
+    open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-
-        
-        self.view.frame = CGRect()
     }
+
+    open override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
     
-    
-    func loadContent(_ content: String) {
+    public func loadContent(_ content: String) {
+        /*
+        let json = content.data(using: .utf8)!
+        let decoder = JSONDecoder()
         
+        let decodedJson = try! decoder.decode([[String:String]].self, from: json)
+
+        print("@@@@@@@@@@")
+        print(decodedJson)
+        print("@@@@@@@@@@")
+        */
+        print(content)
     }
 }
 
