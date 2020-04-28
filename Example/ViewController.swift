@@ -12,12 +12,23 @@ import Kenbunroku
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var readButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
        
-        
-        loadSampleFile()
+        readButton.addTarget(self, action: #selector(readButtonEvent(_:)), for: .touchUpInside)
+    }
+    
+    
+    @objc
+    func readButtonEvent(_ sender: Any) {
+        print("Call Kenbunroku ViewController")
+        let nextVC = KenReaderController()
+        nextVC.loadContent(loadSampleFile())
+
+        self.present(nextVC, animated: true, completion: nil)
     }
 
 }
@@ -26,22 +37,24 @@ class ViewController: UIViewController {
 
 extension ViewController {
     
-    fileprivate func loadSampleFile() {
+    fileprivate func loadSampleFile() -> String {
           if let path: String = Bundle.main.path(forResource: "APISource", ofType: "json") {
               
               do {
-                  // ファイルの内容を取得する
                   let content = try String(contentsOfFile: path)
-                  print(" \(content)")
-                 // testLabel.text = content
+                 // print(" \(content)")
+                
+                return content
                   
               } catch  {
-                  print("ファイルの内容取得時に失敗")
+                  print("Failed to get file content")
               }
               
               
           } else {
-              print("指定されたファイルが見つかりません")
+              print("File not found")
           }
+        
+        return ""
     }
 }
