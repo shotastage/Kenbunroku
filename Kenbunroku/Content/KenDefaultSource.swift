@@ -14,7 +14,17 @@ public let kenDefaultSource: String = """
     "body": [
         {
             "block": "Title",
+            "content": "見聞録",
+            "contentType": "Text"
+        },
+        {
+            "block": "Subtitle",
             "content": "Content Not Found",
+            "contentType": "Text"
+        },
+        {
+            "block": "Paragraph",
+            "content": "Sorry, the Kenbunroku system has been occured error due to null content!",
             "contentType": "Text"
         }
     ]
