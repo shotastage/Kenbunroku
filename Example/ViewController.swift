@@ -36,22 +36,19 @@ class ViewController: UIViewController {
 extension ViewController {
     
     fileprivate func loadSampleFile() -> String {
-          if let path: String = Bundle.main.path(forResource: "APISource", ofType: "json") {
-              
-              do {
-                  let content = try String(contentsOfFile: path)
-                 // print(" \(content)")
+        if let path: String = Bundle.main.path(forResource: "APISource", ofType: "json") {        
+            do {
+                let content = try String(contentsOfFile: path)
+                // print(" \(content)")
                 
                 return content
                   
-              } catch  {
-                  print("Failed to get file content")
-              }
-              
-              
-          } else {
-              print("File not found")
-          }
+            } catch  {
+                print("Failed to get file content")
+            }      
+        } else {
+            print("File not found")
+        }
         
         return ""
     }
