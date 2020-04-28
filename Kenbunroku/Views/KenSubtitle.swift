@@ -1,5 +1,5 @@
 //
-//  KenTitle.swift
+//  KenSubtitle.swift
 //  Kenbunroku
 //
 //  Created by Shota Shimazu on 2020/04/28.
@@ -8,17 +8,16 @@
 
 import UIKit
 
-
-open class KenTitle: KenLabel {
+open class KenSubtitle: KenLabel {
     
-    public let height: CGFloat = 40
+    public let height: CGFloat = 20
     
     override func compose() {
         super.compose()
         
         let stringAttributes: [NSAttributedString.Key : Any] = [
             .foregroundColor : UIColor.black,
-            .font : UIFont.boldSystemFont(ofSize: 40.0)
+            .font : UIFont.boldSystemFont(ofSize: 20.0)
         ]
         let string = NSAttributedString(string: self.text ?? "No text", attributes: stringAttributes)
         self.attributedText = string
