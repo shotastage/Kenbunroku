@@ -6,4 +6,14 @@
 //  Copyright © 2020 Shota Shimazu. All rights reserved.
 //
 
-import Foundation
+import Kenbunroku
+
+
+final class ExampleReaderViewController: KenReaderController {
+    
+    
+    override func viewWillContentLoad() {
+        super.viewWillContentLoad()
+    }
+
+}
