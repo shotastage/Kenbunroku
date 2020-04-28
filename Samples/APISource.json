@@ -3,14 +3,14 @@
     "Body": [
         {
             "Block": "Title",
-            "Content": "ぶらり横浜旅",
+            "Content": "見聞録ドキュメント",
             "FontSize": 20,
             "FontWeight": 500,
             "FontColor": "#333"
         },
         {
             "Block": "Subtitle",
-            "Content": "鉄道１日券を使った一人旅",
+            "Content": "Introduction about Kenbunroku",
             "FontSize": 12,
             "FontWeight": 500,
             "FontColor": "orange"
