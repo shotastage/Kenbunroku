@@ -14,7 +14,7 @@ public let kenDefaultSource: String = """
     "body": [
         {
             "block": "Title",
-            "content": "見聞録",
+            "content": "ドキュメントタイトル",
             "contentType": "Text"
         },
         {

@@ -15,6 +15,7 @@ public struct KenFormat: Codable {
 }
 
 
+
 //
 // Kenbunroku Content Block Struct
 //

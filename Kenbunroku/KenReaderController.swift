@@ -10,6 +10,8 @@ import UIKit
 
 open class KenReaderController: UIViewController {
 
+    ///
+    /// Sources
     var source: String?
 
     var content: KenFormat? = nil
@@ -23,6 +25,8 @@ open class KenReaderController: UIViewController {
         view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         return view
     }()
+    
+    var registeredKenLabels: Array<KenLabel>?
 
     open override func viewDidLoad() {
         super.viewDidLoad()
