@@ -1,9 +1,8 @@
 ![Kenbunroku Logo](./docs/logo.png)
 
+>> Now under construction
+
 Kenbunroku for iOS is parser for **Kenbunroku** formatted documents.
-
-
-
 
 
 ## About Kenbunroku Format
