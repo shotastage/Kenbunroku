@@ -4,7 +4,7 @@ attributes:
 options:
   bundleIdPrefix: com.shotastage
   deploymentTarget:
-    iOS: 13.0
+    iOS: 17.0
 targets:
   Kenbunroku:
     type: framework
