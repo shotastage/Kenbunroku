@@ -8,12 +8,10 @@
 
 import UIKit
 
-
-
 open class KenLabel: UILabel {
-    
+
     let style: KenFontStyle? = nil
-    
+
     public override init(frame: CGRect) {
         super.init(frame: frame)
         compose()

@@ -8,13 +8,10 @@
 
 import Foundation
 
-
 public struct KenFormat: Codable {
-    let head: Array<String>
-    let body: Array<KenBlock>
+    let head: [String]
+    let body: [KenBlock]
 }
-
-
 
 //
 // Kenbunroku Content Block Struct
@@ -33,11 +30,10 @@ public struct KenFontStyle: Codable {
     let fontFamily: String
 }
 
-
 //
 // Kenbunroku Head Block
 //
 
 public struct KenHeadBasic: Codable {
-    
+
 }

@@ -8,7 +8,6 @@
 
 import Kenbunroku
 
-
 final class ExampleReaderViewController: KenReaderController {
 
 }

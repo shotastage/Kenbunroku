@@ -9,7 +9,6 @@
 import UIKit
 import Kenbunroku
 
-
 class ViewController: UIViewController {
 
     @IBOutlet weak var readButton: UIButton!
@@ -17,11 +16,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       
+
         readButton.addTarget(self, action: #selector(readButtonEvent(_:)), for: .touchUpInside)
     }
-    
-    
+
     @objc
     func readButtonEvent(_ sender: Any) {
         print("Call Kenbunroku ViewController")
@@ -31,25 +29,23 @@ class ViewController: UIViewController {
 
 }
 
-
-
 extension ViewController {
-    
+
     fileprivate func loadSampleFile() -> String {
-        if let path: String = Bundle.main.path(forResource: "APISource", ofType: "json") {        
+        if let path: String = Bundle.main.path(forResource: "APISource", ofType: "json") {
             do {
                 let content = try String(contentsOfFile: path)
                 // print(" \(content)")
-                
+
                 return content
-                  
-            } catch  {
+
+            } catch {
                 print("Failed to get file content")
-            }      
+            }
         } else {
             print("File not found")
         }
-        
+
         return ""
     }
 }
