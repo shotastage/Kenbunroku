@@ -61,7 +61,7 @@ open class KenReaderController: UIViewController {
 //
 extension KenReaderController {
     
-     open func viewWillContentLoad() {
+    public func viewWillContentLoad() {
          #if DEBUG
              print("[Kenbunroku] sample content will be loaded.")
          #endif
@@ -69,11 +69,11 @@ extension KenReaderController {
          self.source = kenDefaultSource
      }
 
-     open func viewDidContentLoad() {
+    public func viewDidContentLoad() {
          self.content = try? KenJSONParser(self.source!).parse()
      }
      
-     open func viewWillContentShow() {
+    public func viewWillContentShow() {
          for content in self.content!.body {
              if content.contentType == "Text" && content.block == "Title" {
                  let label = KenTitle()
@@ -93,7 +93,7 @@ extension KenReaderController {
          }
      }
      
-     open func viewDidContentShow() {
+    public func viewDidContentShow() {
          
      }
 }
